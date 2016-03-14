@@ -1,0 +1,12 @@
+{
+    "db": {
+        "host": "localhost",
+        "user": "gtd_dev",
+        "password": "develop",
+        "database": "test"
+    },
+    "server": {
+        "baseUri": "/api/rest",
+        "docRoot": "build/"
+    }
+}

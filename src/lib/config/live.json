@@ -1,0 +1,12 @@
+{
+    "db": {
+        "host": "greaterthandesign.us",
+        "user": "gtd_live",
+        "password": "somelivepassword",
+        "database": "livedb"
+    },
+    "server": {
+        "baseUrl": "/api/rest",
+        "docRoot": "build/"
+    }
+}

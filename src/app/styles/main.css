@@ -1,0 +1,121 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+header,
+nav {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+img {
+  border: 0;
+}
+
+button input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: arial, sans-serif;
+  color: #333;
+  background: #f7f7f7;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #e67e22;
+}
+
+.navigation {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  font-size: 0;
+  list-style: none;
+}
+
+.navigation li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  width: 33%;
+  padding: 0.8em 0;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ddd;
+  zoom: 1;
+  transition: all 0.3s ease;
+}
+
+.navigation li:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+
+.contact-card {
+  width: 60%;
+  padding: 1em;
+  margin: 0 auto 2em auto;
+  border: #ccc 1px solid;
+  -webkit-box-shadow: 0 3px 4px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0 3px 4px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0 3px 4px 0px rgba(50, 50, 50, 0.4);
+}
+
+.contact-card:hover {
+  -webkit-box-shadow: 0 3px 4px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 0 3px 4px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 0 3px 4px 0px rgba(50, 50, 50, 0.7);
+}
+
+.contact-card img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.contact-card ul {
+  margin-left: 120px;
+  list-style: none;
+}
+
+.contact-card ul li {
+  margin-bottom: 0.5em;
+}
+
+.contact-card .name {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
