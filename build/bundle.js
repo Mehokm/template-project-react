@@ -495,7 +495,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      console.log(this.state.showSpinner);
 	      return _react2.default.createElement(
 	        'div',
 	        null,

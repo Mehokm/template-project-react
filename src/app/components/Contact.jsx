@@ -21,7 +21,6 @@ export default class Contact extends React.Component {
     this.serverRequest.abort();
   }
   render() {
-	  console.log(this.state.showSpinner)
     return (
       <div>
 		{this.state.showSpinner ? <LoadingSpinner /> : <List people={this.state.people} /> }
