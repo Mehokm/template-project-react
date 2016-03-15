@@ -9,6 +9,7 @@ import (
 	"template-project-react/src/lib/controllers"
 
 	"go-tfts"
+	"time"
 )
 
 func main() {
@@ -36,6 +37,8 @@ func main() {
 	//
 	handler.AddInterceptor(func(c rest.Context) bool {
 		fmt.Println(c.Request.UserAgent())
+
+		time.Sleep(2 * time.Second)
 
 		return true
 	})
