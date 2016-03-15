@@ -12,7 +12,7 @@ export default class List extends React.Component {
               description={person.description} />
       );
     });
-    console.log(cards);
+    
     return (
       <div className="main-content">
         {cards}

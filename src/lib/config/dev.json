@@ -6,7 +6,7 @@
         "database": "test"
     },
     "server": {
-        "baseUri": "/api/rest",
+        "baseUri": "/api/v1",
         "docRoot": "build/"
     }
 }

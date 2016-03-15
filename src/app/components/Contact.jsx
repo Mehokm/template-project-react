@@ -1,33 +1,27 @@
 import React from 'react';
 import List from './List.jsx';
 
-let people = [
-  {
-    "id": 1,
-    "name": "Moe",
-    "occupation": "Awesome Software Engineer",
-    "description": "Unde laudantium temporibus nostrum autem deserunt? Optio, enim repellat. Molestiae?",
-    "photo": "moe.png"
-  }, {
-    "id": 2,
-    "name": "Larry",
-    "occupation": "Designer \u0026 Developer",
-    "description": "Odit nobis cupiditate velit, doloribus ullam fugiat placeat totam perferendis.",
-    "photo": "larry.png"
-  }, {
-    "id": 3,
-    "name": "Curly",
-    "occupation": "Software Engineer, Ferret Owner",
-    "description": "Quidem, obcaecati, aliquam! Hic, veritatis dolorem omnis adipisci iusto, laudantium!",
-    "photo": "curly.png"
-  }
-];
+import $ from "jquery";
 
 export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+	this.state = {people: []};
+  }
+  componentDidMount() {
+    this.serverRequest = $.get(this.props.route.source, function (result) {
+      this.setState({
+        people: result
+      });
+    }.bind(this))
+  }
+  componentWillUnmount() {
+    this.serverRequest.abort();
+  }
   render() {
     return (
       <div>
-        <List people={people} />
+        <List people={this.state.people} />
       </div>
     );
   }
